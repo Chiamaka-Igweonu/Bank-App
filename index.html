@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <script src="app.js" defer></script>
     <title>Bank App</title>
   </head>
@@ -10,24 +11,68 @@
     
     <div id="app">Loading...</div>
 
-    <template id="login">
-        <h1>Bank App</h1>
+    
+   <section class="section">
+      <template id="login" >
+        <h1 class="header">Bank App</h1>
         <section>
-          <a href="/dashboard" onclick="onLinkClick(event)">Login</a>
+          <span></span>
+          <h2 class="header" id=login>Login</h2>
+          <form id="loginForm" action='/dashboard'>
+            <label for="username">Username</label>
+            <br>
+            <input id="username" name="user" type="text">
+            <br>
+            <button>Login</button>
+          </form>
         </section>
-    </template>
+        <section id="line"><span>OR</span></section>
+        <h2 class="header">Register</h2>
+
+        <form id="registerForm" action="javascript:register()">
+          <label for="user">Username</label>
+          <br>
+          <input id="user" name="user" type="text" maxlength="20" required> 
+          <br>
+          <label for="currency">Currency</label>
+          <br>
+          <input id="currency" name="currency" type="text" value="$"maxlength="5" required>
+          <br>
+          <label id="info" for="description">Description</label>
+          <br>
+          <input id="description" name="description" type="text" maxlength="100">
+          <br>
+          <label id= "money"for="balance">Current balance</label>
+          <br>
+          <input id="balance" name="balance" type="number" value="0">
+          <br>
+          <button>Register</button>
+        </form>
+
+      </template>
+    </section>
 
     <template id="dashboard">
-        <header>
+        <header class="header">
           <h1>Bank App</h1>
-          <a href="/login" onclick="onLinkClick(event)">Logout</a>
+          <br>
+          <section>
+          <a id=logout href="/login" onclick="onLinkClick(event)">Logout</a>
+          <br>
+          <section>
+          <br>
         </header>
-        <section>
-          Balance: 100$
+
+        <br>
+        <section id="cover">
+        <section id="balance">
+          BALANCE 
+          <h4 id=amount> 100$</h4>
+        </section>
         </section>
         <section>
-          <h2>Transactions</h2>
-          <table>
+          <h2 id=title >Transactions</h2>
+          <table id=transactions>
             <thead>
               <tr>
                 <th>Date</th>

@@ -1,0 +1,184 @@
+body {
+    background-image: linear-gradient(to bottom right,#42a5f5,#53a1e0);
+    font-family: Helvetica, sans-serif;
+  }
+h1 {
+    color: whitesmoke;
+  }
+h2{
+  color: #0d6cba;
+}
+.header{
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  
+}
+form{
+  text-align: center;
+  top: -80%;
+  
+}
+
+#line {
+  width: 30%; 
+  text-align: center; 
+  border-bottom: 1px solid #000; 
+  line-height: 0.1em;
+  margin: 10px 0 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: small;
+} 
+
+#line span { 
+   background:#eeeff1; 
+   padding:0 10px; 
+   z-index: -1;
+   
+}
+
+#login{
+  padding: 2px;
+}  
+.section{
+  background: #f1f0f0;
+  border-bottom: 1px solid #eeeff1;
+  border-radius: 0;
+  box-shadow: none;
+  outline: none;
+  color: inherit;
+  height: 562px;
+  width: 400px;
+  border-radius: 20px;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  z-index: -3;
+  
+}
+label{
+  left: -20%;
+  text-transform: uppercase;
+  font-size: 10px;
+  position: relative;
+  text-align: left;
+}
+#money {
+  left:-17%
+}
+#info{
+  left:-18.5%
+}
+
+input{
+  
+  text-align: center;
+  position: relative;
+
+}
+
+input, button {
+  height:30px;
+  width: 350px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #0d6cba;
+  border-radius: 4px;
+  box-sizing: border-box;
+  text-align: start;
+}
+button{
+  text-align: center;
+  text-transform: uppercase;
+  color:white;
+  background-color: #0d6cba;
+  padding: 0;
+}
+
+section{
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  font-size: 15px;
+}
+
+#transactions {
+  font-family: Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 400px;
+  right: 50%;
+  display: relative;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#transactions td, #transactions th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#transactions tr:nth-child(even){background-color: #f2f2f2;}
+
+#transactions tr:hover {background-color: #ddd;}
+#transactions th{
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #ddd;
+  text-transform: capitalize;
+  color: black;
+  
+}
+#cover{
+  background:linear-gradient(to bottom right,#42a5f5,#53a1e0);;
+  border-bottom: 1px solid #194aac;
+  border-radius: 0;
+  box-shadow: none;
+  outline: none;
+  height: 40px;
+  width: 400px;
+  position: block;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  
+
+}
+#balance{
+  text-align: center;
+  font-size: 10px;
+  color: #ddd;
+  padding:0;
+  margin:0;
+  
+}
+#amount{
+  font-size:30px;
+  top:20%;
+  position: relative;
+  padding:0;
+  margin:0;
+}
+#title{
+  padding:0;
+  margin:0;
+
+}
+a{
+color: white;
+text-decoration: none;
+text-align: center;
+margin-top: 0;
+padding: 0;
+display:inline-block;
+background-color:#42a5f5 ;
+border-radius: 25px;
+width: 100px;
+
+}
