@@ -61,18 +61,16 @@ form{
   
 }
 label{
-  left: -20%;
+  left: -11%;
   text-transform: uppercase;
   font-size: 10px;
   position: relative;
   text-align: left;
 }
 #money {
-  left:-17%
+  left:-10%
 }
-#info{
-  left:-18.5%
-}
+
 
 input{
   
